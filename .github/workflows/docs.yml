@@ -21,9 +21,7 @@ jobs:
         with:
           python-version: 3.x
       - run: pip install zensical
-      - run: zensical build --clean At the moment, we do not recommend using caches on CI systems as the caching
-    functionality will undergo revisions as we optimize the performance of
-    Zensical.
+      - run: zensical build --clean
       - uses: actions/upload-pages-artifact@v4
         with:
           path: site
